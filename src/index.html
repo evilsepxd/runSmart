@@ -9,10 +9,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;700&family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-	<div class="promo">
+	<section class="promo">
 		<div class="container">
 			<header class="header">
 				<a href="#" class="header__logo">
@@ -56,9 +57,9 @@
 			</div>
 			
 		</div>
-	</div>
+	</section>
 
-	<div class="advantages">
+	<section class="advantages">
 		<div class="container">
 			<div class="title">
 				НАШИ ПРЕИМУЩЕСТВА
@@ -81,9 +82,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div class="consultation">
+	<section class="consultation">
 		<div class="container">
 			<h2 class="title title_left">Получите бесплатную консультацию<br>по подбору пульсометра</h2>
 			<div class="consultation__descr">
@@ -96,6 +97,27 @@
 				<button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
 			</form>
 		</div>
-	</div>
+	</section>
+
+	<section class="carousel">
+		<div class="container">
+			<div class="carousel__inner">
+				<div>
+					<img src="img/slide_1.png" alt="slide 1">
+				</div>
+				<div>
+					<img src="img/slide_2.png" alt="slide 2">
+				</div>
+				<div>
+					<img src="img/slide_3.png" alt="slide 3">
+				</div>
+			</div>
+			<button type="button" class="prev"><img src="../icons/left_arrow.svg"></button>
+			<button type="button" class="next"><img src="../icons/right_arrow.svg"></button>
+		</div>
+	</section>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
