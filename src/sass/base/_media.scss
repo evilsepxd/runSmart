@@ -67,12 +67,22 @@
 		}
 	}
 	.catalog {
+		padding-bottom: 40px;
 		&__content {
 			justify-content: center;
 		}
 		&-item {
 			margin-left: 10px;
 			margin-right: 10px;
+		}
+	}
+	.reviews {
+		&__img {
+			margin-right: 20px;
+			width: 150px;
+		}
+		&__comment {
+			margin-right: 20px;
 		}
 	}
 }
@@ -319,6 +329,30 @@
 		}
 		&__content {
 			margin-top: 30px;
+		}
+	}
+	.reviews {
+		h2 {
+			margin-bottom: 30px;
+		}
+		&__wrapper {
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 40px;
+		}
+		&__img {
+			margin-right: 0;
+			width: 150px;
+		}
+		&__name {
+			margin-top: 10px;
+		}
+		&__comment {
+			margin: 0 10px;
+		}
+		&__item {
+			width: auto;
+			text-align: center;
 		}
 	}
 }

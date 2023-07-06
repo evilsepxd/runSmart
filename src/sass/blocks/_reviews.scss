@@ -1,0 +1,33 @@
+.reviews {
+	padding-bottom: 48px;
+	h2 {
+		margin-bottom: 60px;
+	}
+	&__wrapper {
+		margin-bottom: 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+	}
+	&__item {
+		width: 686px;
+	}
+	&__name {
+		color: #0D0D0D;
+		font-size: 18px;
+		font-weight: 700;
+	}
+	&__subtitle {
+		color: #646464;
+		font-size: 14px;
+		font-weight: 500;
+	}
+	&__comment {
+		font-family: MuseoModerno;
+		margin-top: 10px;
+		color: #0D0D0D;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 24px;
+	}
+}
