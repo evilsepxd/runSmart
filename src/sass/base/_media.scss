@@ -59,6 +59,22 @@
 			line-height: 46px;
 		}
 	}
+	.carousel {
+		&__inner {
+			img {
+				width: 90%;
+			}
+		}
+	}
+	.catalog {
+		&__content {
+			justify-content: center;
+		}
+		&-item {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
 }
 @media (max-width: 767px) {
 	.button {
@@ -76,6 +92,11 @@
 			width: 100%;
 			height: 46px;
 			font-size: 15px;
+		}
+		&_mini {
+			width: 131px;
+			height: 40px;
+			font-size: 14px;
 		}
 	}
 	.header {
@@ -162,6 +183,15 @@
 			}
 		}
 	}
+	.catalog {
+		&__tabs {
+			margin-top: 40px;
+		}
+		&__tab {
+			width: 25%;
+			font-size: 14px;
+		}
+	}
 }
 @media (max-width: 575px) {
 	.header {
@@ -188,6 +218,11 @@
 			width: 80%;
 			height: 35px;
 			font-size: 13px;
+		}
+		&_mini {
+			width: 131px;
+			height: 40px;
+			font-size: 14px;
 		}
 	}
 	.promo {
@@ -251,6 +286,39 @@
 		input {
 			width: 80%;
 			height: 35px;
+		}
+	}
+	.carousel {
+		padding: 40px 0;
+	}
+	.catalog {
+		.title {
+			font-size: 20px;
+		}
+		&__tabs {
+			margin-top: 20px;
+			flex-direction: column;
+		}
+		&__tab {
+			width: 300px;
+			height: 30px;
+			line-height: 28px;
+			font-size: 14px;
+			transform: skew(0);
+			margin: 5px 0;
+			border-radius: 15px;
+			border-width: 1px;
+			font-size: 13px;
+			div {
+				transform: skew(0);
+			}
+			&:hover {
+				box-shadow: 0 5px 10px #6B6B6B;
+				border: none;
+			}
+		}
+		&__content {
+			margin-top: 30px;
 		}
 	}
 }

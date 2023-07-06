@@ -2,8 +2,11 @@
 	padding: 81px 0;
 	&__inner {
 		position: relative;
-		width: 750px;
+		max-width: 750px;
 		margin: 0 auto;
+		img {
+			margin: 0 auto;
+		}
 	}
 	.prev, .next {
 		top: 50%;
@@ -21,10 +24,28 @@
 		right: -66px;
 		left: auto;
 	}
-	.tns-item {
-		img {
-			display: block;
-			margin: 0 auto;
+	ul {
+		display: flex;
+		list-style-type: none;
+		justify-content: center;
+		font-size: 0;
+		padding: 0;
+		margin-bottom: 0;
+		li {
+			button {
+				width: 15px;
+				height: 15px;
+				margin: 0 5px;
+				border: 2px solid #D0D0D0;
+				border-radius: 50%;
+				background-color: #fff;
+			}
+		}
+		.slick-active {
+			button {
+				border: none;
+				background-color: $main-color;
+			}
 		}
 	}
 }

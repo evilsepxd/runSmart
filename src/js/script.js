@@ -1,23 +1,22 @@
-const slider = tns({
-	container: '.carousel__inner',
-	items: 1,
-	slideBy: 'page',
-	autoplay: false,
-	controls: false,
-	nav: false,
-	speed: 600
-   });
-
-document.querySelector('.prev').addEventListener('click', function () {
-	slider.goTo('prev');
-});
-
-document.querySelector('.next').addEventListener('click', function () {
-	slider.goTo('next');
-});
-
-(function($) {
+$(document).ready(function() {
 	$(function() {
+
+		$('.carousel__inner').slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: '<button type="button" class="prev"><img src="icons/left_arrow.svg" alt="prev"></button>',
+			nextArrow: '<button type="button" class="next"><img src="icons/right_arrow.svg" alt="next"></button>',
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						dots: true,
+						arrows: false
+					}
+				}
+			]
+		});
 	  
 		$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
 			$(this)
@@ -38,4 +37,4 @@ document.querySelector('.next').addEventListener('click', function () {
 		toggleSlide('.catalog-item__link');
 		toggleSlide('.catalog-item__back');
 	});
-})(jQuery);
+});
