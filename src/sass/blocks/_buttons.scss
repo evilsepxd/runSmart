@@ -9,6 +9,11 @@
 	font-size: 12px;
 	font-weight: 500;
 	text-transform: uppercase;
+	transition: 0.5s all;
+	&:hover {
+		background-color: #fff;
+		color: $main-color;
+	}
 	&_main {
 		margin-top: 67px;
 		width: 300px;
@@ -26,5 +31,8 @@
 		width: 131px;
 		height: 40px;
 		font-size: 14px;
+		&:hover {
+			border: 1px solid #D0D0D0;
+		}
 	}
 }

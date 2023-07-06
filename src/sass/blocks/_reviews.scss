@@ -8,6 +8,11 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: start;
+		transition: 0.5s all;
+		&:hover {
+			box-shadow: -10px 10px 50px #D0D0D0;
+			border-radius: 15px;
+		}
 	}
 	&__item {
 		width: 686px;

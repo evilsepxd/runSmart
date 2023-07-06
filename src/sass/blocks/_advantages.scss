@@ -29,6 +29,12 @@
 			color: #FF0000;
 			font-family: MuseoModerno;
 			text-decoration: underline;
+			transition: 0.5s all;
+			&:hover {
+				color: #fff;
+				background-color: $main-color;
+				border-radius: 7px;
+			}
 		}
 	}
 }
