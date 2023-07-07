@@ -217,6 +217,10 @@
 			font-size: 14px;
 		}
 	}
+	.modal {
+		width: 330px;
+		min-height: 360px;
+	}
 }
 @media (max-width: 575px) {
 	.header {
@@ -299,6 +303,8 @@
 		}
 	}
 	.consultation {
+		padding-left: 10px;
+		padding-right: 10px;
 		&__descr {
 			font-size: 13px;
 			line-height: 22px;
@@ -390,6 +396,21 @@
 			margin-bottom: 0;
 			margin: 0 10px;
 			font-size: 18px;
+		}
+	}
+	.modal {
+		width: 300px;
+		min-height: 322px;
+		padding: 30px 20px 40px;
+		&__subtitle {
+			font-size: 15px;
+		}
+		&__descr {
+			font-size: 13px;
+		}
+		&__close {
+			top: 5px;
+			right: 5px;
 		}
 	}
 }
