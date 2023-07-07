@@ -52,5 +52,44 @@ $(document).ready(function() {
 				$('.overlay, #order').fadeIn();
 			});
 		});
+
+		// validation
+
+		function validateForms(form) {
+			$(form).validate({
+				rules: {
+					name: 'required',
+					phone: {
+						required: true,
+						minlength: 11,
+						maxlength: 11
+					},
+					email: {
+						required: true,
+						email: true
+					}
+				},
+				messages: {
+					name: "Пожалуйста, введите своё имя",
+					phone: {
+						required: "Пожалуйста, введите свой номер телефона",
+						minlength: jQuery.validator.format("Введите хотя бы {0} символов!"),
+						maxlength: "Некорректный номер телефона"
+					},
+					email: {
+						required: "Пожалуйста, введите свой почтовый адрес",
+						email: "Ваш почтовый адрес должен быть в формате name@domain.com"
+					}
+				   }
+			});
+		};
+
+		validateForms('#consultation-form');
+		validateForms('#consultation .feed-form');
+		validateForms('#order .feed-form');
+
+		// mask
+
+		$('input[name=phone').mask("+7 (999) 999-99-99")
 	});
 });
